@@ -455,6 +455,7 @@ static int uw_kbd_bl_init(struct platform_device *dev)
 
 	uniwill_kbd_bl_type_rgb_single_color = false
 		// New names
+		| dmi_match(DMI_BOARD_NAME, "GK5NxxO M20")
 		| dmi_match(DMI_BOARD_NAME, "POLARIS1501A1650TI")
 		| dmi_match(DMI_BOARD_NAME, "POLARIS1501A2060")
 		| dmi_match(DMI_BOARD_NAME, "POLARIS1501I1650TI")
